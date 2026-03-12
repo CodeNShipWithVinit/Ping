@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
+import logo from "./assets/logo.svg";
+import dashboard from "./assets/illustration-dashboard.png";
+import fb from "./assets/fb.png";
+import insta from "./assets/insta.png";
+import x from "./assets/x.png";
+
 
 function App() {
   const [email, setEmail] = useState("");
@@ -38,7 +44,7 @@ function App() {
   return (
     <div className="container">
       <div className="logo">
-        <img src="./src/assets/logo.svg" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       <h1>
@@ -69,13 +75,13 @@ function App() {
       </div>
 
       <div className="dashboard">
-        <img src="./src/assets/illustration-dashboard.png" alt="Dashboard" />
+        <img src={dashboard} alt="Dashboard" />
       </div>
 
       <div className="icons">
-        <img src="./src/assets/fb.png" alt="Facebook" />
-        <img src="./src/assets/insta.png" alt="Instagram" />
-        <img src="./src/assets/x.png" alt="X" />
+        <img src={fb} alt="Facebook" />
+        <img src={insta} alt="Instagram" />
+        <img src={x} alt="X" />
       </div>
 
       <p className="copyright">© Copyright Ping. All rights reserved.</p>
